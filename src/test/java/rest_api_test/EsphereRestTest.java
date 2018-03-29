@@ -3,10 +3,14 @@ package rest_api_test;
 import api_core.EsphereApi;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Stories;
 
 import static api_constants.EsphereRestConstants.*;
 
+@Features({"REST Test Suite"})
+@Stories({"\"Esphere REST\" tests"})
 public class EsphereRestTest {
 
     @Step("Check Request of INN and meeting request configuration and specification")
