@@ -73,6 +73,6 @@ public class MainPageGoogle {
     @Step("Check that Search Results Area is empty after click Google logo on the left top side")
     public void checkLeftTopLogoIsEmpty() {
         actions.moveToElement(logo).click().build().perform();
-        searchResults.forEach(searchResult -> assertFalse(searchResult.isDisplayed()));
+        searchResults.isEmpty();
     }
 }
