@@ -16,8 +16,8 @@ http://lkk.esphere.ru/informator/api/v2/task/search?innOgrn= (по параме�
 
 
 Getting started:
-mvn clean test - run your tests
-You can generate a report using one of the following command:
+- mvn clean test - run your tests
+- You can generate a report using one of the following command:
 
-mvn allure:report
-Report will be generated tо directory: target/site/allure-maven/index.html
+- mvn allure:report
+- Report will be generated tо directory: target/site/allure-maven/index.html
