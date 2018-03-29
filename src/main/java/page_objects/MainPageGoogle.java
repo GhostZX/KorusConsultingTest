@@ -67,7 +67,7 @@ public class MainPageGoogle {
     @Step("Check that Search Tooltip is exist")
     public void checkSearchTooltip(WebDriver driver) {
         actions = new Actions(driver);
-        actions.moveToElement(logo).moveToElement(searchForm).clickAndHold(searchForm).build().perform();
+        actions.moveToElement(logo).moveToElement(searchForm).build().perform();
         assertEquals(searchForm.getAttribute(TITLE.text), TOOLTIP_TEXT.text);
     }
 }
