@@ -15,6 +15,8 @@ http://lkk.esphere.ru/informator/api/v2/task/search?innOgrn= (по параме�
 Проект можете выложить на github, либо прислать нам архивом.
 
 
+
+
 Getting started:
 mvn clean test - run your tests
 You can generate a report using one of the following command:
