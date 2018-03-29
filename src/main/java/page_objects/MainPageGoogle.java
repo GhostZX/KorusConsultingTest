@@ -12,8 +12,7 @@ import ru.yandex.qatools.allure.annotations.Step;
 import java.util.List;
 
 import static enums.ValuesEnum.*;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 public class MainPageGoogle {
     private WebDriverWait webDriverWait;
@@ -69,5 +68,11 @@ public class MainPageGoogle {
         actions = new Actions(driver);
         actions.moveToElement(logo).moveToElement(searchForm).build().perform();
         assertEquals(searchForm.getAttribute(TITLE.text), TOOLTIP_TEXT.text);
+    }
+
+    @Step("Check that Search Results Area is empty after click Google logo on the left top side")
+    public void checkLeftTopLogoIsEmpty() {
+        actions.moveToElement(logo).click().build().perform();
+        searchResults.forEach(searchResult -> assertFalse(searchResult.isDisplayed()));
     }
 }

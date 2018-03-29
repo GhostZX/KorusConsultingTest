@@ -44,5 +44,6 @@ public class SearchTest {
         mainPageGoogle.checkResultsTitlePage(driver);
         mainPageGoogle.checkResultsSection();
         mainPageGoogle.checkSearchTooltip(driver);
+        mainPageGoogle.checkLeftTopLogoIsEmpty();
     }
 }
