@@ -21,5 +21,5 @@ Getting started:
 mvn clean test - run your tests
 You can generate a report using one of the following command:
 
-mvn allure:report
+- mvn allure:report
  - Report will be generated tо directory: target/site/allure-maven/index.html
