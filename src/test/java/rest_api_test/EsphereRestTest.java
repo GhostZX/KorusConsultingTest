@@ -17,7 +17,7 @@ public class EsphereRestTest {
     @Test
     public void makeRequestInn() {
         EsphereApi.with()
-                .innOgrn(INN_OGRN, INN_PARAMETER)
+                .inn(INN_OGRN, INN_PARAMETER)
                 .callApi();
         RestAssured
                 .given(EsphereApi.baseRequestConfiguration())
@@ -30,7 +30,7 @@ public class EsphereRestTest {
     @Test
     public void makeRequestOgrn() {
         EsphereApi.with()
-                .innOgrn(INN_OGRN, OGRN_PARAMETER)
+                .ogrn(INN_OGRN, OGRN_PARAMETER)
                 .callApi();
         RestAssured
                 .given(EsphereApi.baseRequestConfiguration())

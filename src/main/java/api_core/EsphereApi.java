@@ -29,8 +29,13 @@ public class EsphereApi {
             esphereApi = esphere;
         }
 
-        public ApiBuilder innOgrn(String innOgrn, String innParameter) {
+        public ApiBuilder inn(String innOgrn, String innParameter) {
             esphereApi.params.put(INN_OGRN, INN_PARAMETER);
+            return this;
+        }
+
+        public ApiBuilder ogrn(String innOgrn, String orgnParameter) {
+            esphereApi.params.put(INN_OGRN, OGRN_PARAMETER);
             return this;
         }
 
